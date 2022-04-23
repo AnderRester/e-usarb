@@ -1,15 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/Header'
+import Stories from './src/components/Stories'
+import Navigation from './src/components/Navigation'
 
 export default function App() {
   return (
-    <View>
+    <View style={{flex: 1}}>
         <View>
         <Header />
       </View>
       <View>
-
+        <Stories />
+      </View>
+      <View style={{position: "absolute", bottom: 0, width: "100%"}}>
+        <Navigation />
       </View>
     </View>
   );

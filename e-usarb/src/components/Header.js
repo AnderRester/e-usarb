@@ -11,12 +11,12 @@ const Header = () => {
                 }} />
             </TouchableOpacity>
         </View>
-        <View><Text style={{fontSize: 24, fontWeight: 600}}>USARB</Text></View>
+        <View><Text style={{fontSize: 24, fontWeight: 600}}>U-Live</Text></View>
         <View style={{ paddingRight: 24, borderColor: 'red' }}>
             <TouchableOpacity onPress={() => Linking.openURL('http://usarb.md')}>
                 <Image source={require('../../personalAsset/chat/send.svg')} style={{
-                    width: 30,
-                    height: 30,
+                    width: 25,
+                    height: 25,
                 }} />
             </TouchableOpacity>
         </View>
