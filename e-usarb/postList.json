@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Eric_Dot",
+        "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+        "postPicture" : "https://usarb.md/wp-content/uploads/2022/02/usarb.md_.png",
+        "articleShort": "Lorem ipsum dolor sit ammet",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "likesCount": 45,
+        "commentsCount": 34,
+        "comments": {
+            "name": "Sara_Johnes",
+            "photo": "https://randomuser.me/api/portraits/women/53.jpg",
+            "articleShort": "This is a great performance!"
+        }
+    },
+    {
+        "name": "Eric_Dot",
+        "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+        "postPicture" : "https://usarb.md/wp-content/uploads/2022/02/usarb.md_.png",
+        "articleShort": "Lorem ipsum dolor sit ammet",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "likesCount": 45,
+        "commentsCount": 34,
+        "comments": {
+            "name": "Sara_Johnes",
+            "photo": "https://randomuser.me/api/portraits/women/53.jpg",
+            "articleShort": "This is a great performance!"
+        }
+    },
+    {
+        "name": "Eric_Dot",
+        "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+        "postPicture" : "https://usarb.md/wp-content/uploads/2022/02/usarb.md_.png",
+        "articleShort": "Lorem ipsum dolor sit ammet",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "likesCount": 45,
+        "commentsCount": 34,
+        "comments": {
+            "name": "Sara_Johnes",
+            "photo": "https://randomuser.me/api/portraits/women/53.jpg",
+            "articleShort": "This is a great performance!"
+        }
+    },
+    {
+        "name": "Sara_Johnes",
+        "photo": "https://randomuser.me/api/portraits/women/53.jpg",
+        "postPicture" : "https://usarb.md/wp-content/uploads/2022/02/usarb.md_.png",
+        "articleShort": "Lorem ipsum dolor sit ammet",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "likesCount": 45,
+        "commentsCount": 34,
+        "comments": {
+            "name": "Eric_Dot",
+            "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+            "articleShort": "This is a great performance!"
+        }
+    }
+    
+]
