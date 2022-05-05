@@ -4,6 +4,7 @@ import Header from './src/components/Header';
 import Stories from './src/components/Stories';
 import Navigation from './src/components/Navigation';
 import Post from './src/components/Post';
+import Main from './src/components/Main';
 import Svg, { Circle, Rect } from 'react-native-svg';
 
 //Main colors: white,  #928a56, #56926d
@@ -15,10 +16,7 @@ export default function App() {
         <Header />
       </View>
       <View>
-        <Stories />
-      </View>
-      <View style={{paddingBottom: 60}}>
-        <Post />
+        <Main />
       </View>
       <View style={{ position: "fixed", bottom: 0, width: "100%"}}>
         <Navigation />

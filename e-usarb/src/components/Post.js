@@ -11,7 +11,7 @@ const Post = () => {
                 {/*         Header of the post             */}
                 <View style={{ flex: 1, backgroundColor: '#8BC9A2', alignItems: 'center', flexDirection: 'row' }}>
                     <View style={{ padding: 4, width: 52 }}>
-                        <LinearGradient colors={['#bc2a8d', '#e95950', '#fccc63']} style={{ padding: 2, borderRadius: 50 }}>
+                        <LinearGradient colors={['#bc2a8d', '#e95950', '#fccc63']} style={{ padding: 2, borderRadius: 22 }}>
                             <Image source={{ uri: item.photo }} style={[styles.userImage, { borderWidth: 1 }]} />
                         </LinearGradient>
                     </View>
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     userImage: {
         height: 40,
         width: 40,
-        borderRadius: 50,
+        borderRadius: 22,
         borderColor: 'white',
         borderWidth: 1
     },
