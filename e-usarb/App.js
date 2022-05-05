@@ -15,10 +15,10 @@ export default function App() {
       <View>
         <Header />
       </View>
-      <View>
+      <View style={{flex: 1, paddingBottom: 70}}>
         <Main />
       </View>
-      <View style={{ position: "fixed", bottom: 0, width: "100%"}}>
+      <View style={{position: "absolute", bottom: 0, width: "100%"}}>
         <Navigation />
       </View>
     </View>

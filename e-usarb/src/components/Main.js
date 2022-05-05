@@ -4,7 +4,7 @@ import Post from './Post';
 
 const Main = () => {
     return (
-        <ScrollView style={{marginBottom: 50}}>
+        <ScrollView>
             <Stories />
             <Post />
         </ScrollView>
