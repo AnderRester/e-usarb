@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import Stories from './Stories';
-import Post from './Post';
+import Stories from '../components/Stories';
+import Post from '../components/Post';
 
-const Main = () => {
+const Home = () => {
     return (
         <ScrollView>
             <Stories />
@@ -11,4 +11,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Home

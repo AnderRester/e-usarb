@@ -4,7 +4,11 @@ import Header from './src/components/Header';
 import Stories from './src/components/Stories';
 import Navigation from './src/components/Navigation';
 import Post from './src/components/Post';
-import Main from './src/components/Main';
+import Home from './src/assembly/Home';
+import Search from './src/components/Search';
+import SearchResults from './src/components/SearchResults';
+import SearchRecomendations from './src/components/SearchRecomendations';
+import SearchView from './src/assembly/SearchView';
 import Svg, { Circle, Rect } from 'react-native-svg';
 
 //Main colors: white,  #928a56, #56926d
@@ -15,10 +19,12 @@ export default function App() {
       <View>
         <Header />
       </View>
-      <View style={{flex: 1, paddingBottom: 70}}>
-        <Main />
+      {/*  paddingBottom: 70 */}
+      <View style={{ flex: 1, paddingBottom: 70 }}>
+        <Home />
+        {/* <SearchView /> */}
       </View>
-      <View style={{position: "absolute", bottom: 0, width: "100%"}}>
+      <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
         <Navigation />
       </View>
     </View>

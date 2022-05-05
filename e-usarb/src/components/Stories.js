@@ -8,7 +8,7 @@ import users from '../../userList.json'
 const Stories = () => {
     return <ScrollView style={{ flex: 1, flexDirection: 'row', marginTop: 2 }} horizontal showsHorizontalScrollIndicator={false}>
         <View style={{ paddingHorizontal: 10, marginTop: 5 }}>
-            <Image source={{ uri: "https://randomuser.me/api/portraits/men/39.jpg" }} style={styles.userImage} />
+            <Image source={{ uri: "https://randomuser.me/api/portraits/men/66.jpg" }} style={styles.userImage} />
             <Text style={styles.userName}>Your Story</Text>
         </View>
         <View style={{ position: 'absolute' }}>
