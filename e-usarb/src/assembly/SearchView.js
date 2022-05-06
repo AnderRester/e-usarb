@@ -7,7 +7,7 @@ import SearchRecomendations from "../components/SearchRecomendations";
 
 const SearchView = () => {
     return (
-        <View>
+        <View style={{paddingTop: 55}}>
             <Search />
             <SearchRecomendations />
         </View>

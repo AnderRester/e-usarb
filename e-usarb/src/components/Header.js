@@ -4,7 +4,7 @@ import Svg, { Path } from 'react-native-svg';
 
 const Header = () => {
     //return <View style={{ backgroundColor: '#928a56', paddingTop: 55, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', paddingBottom: 10, textAlign: 'center'}}>
-    return <View style={{ backgroundColor: '#56926d', paddingTop: 50, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', paddingBottom: 10 }}>
+    return (<View style={{ backgroundColor: '#56926d', paddingTop: 55, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', paddingBottom: 10 }}>
         <View style={{ paddingLeft: 12 }}>
             <TouchableOpacity onPress={() => Linking.openURL('http://usarb.md')}>
 
@@ -27,6 +27,7 @@ const Header = () => {
             </TouchableOpacity>
         </View>
     </View>
+    )
 }
 
 export default Header

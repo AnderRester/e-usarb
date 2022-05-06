@@ -5,9 +5,9 @@ import post from "../../postList.json"
 import Svg, { Path } from 'react-native-svg';
 
 const Post = () => {
-    return <View>
+    return <ScrollView>
         {post.map((item) => (
-            <ScrollView style={{ paddingTop: 10, marginBottom: 40 }}>
+            <View style={{ paddingTop: 10, marginBottom: 40 }}>
                 {/*         Header of the post             */}
                 <View style={{ flex: 1, backgroundColor: '#8BC9A2', alignItems: 'center', flexDirection: 'row' }}>
                     <View style={{ padding: 4, width: 52 }}>
@@ -45,15 +45,15 @@ const Post = () => {
                     {/*         more comments btn                    */}
                     <Text style={{ paddingLeft: 8, fontSize: 12, color: "#848484", fontWeight: '600' }}>Show more</Text>
                 </View>
-            </ScrollView>
+            </View>
         ))}
         {/* <View style={{}}>
 
-            <View><Text style={{fontSize: 24, textAlign: 'center'}}>U-Live</Text></View>
-        </View>
-        <View style={{ paddingRight: 24, borderColor: 'red' }}>
-        </View> */}
-    </View>
+<View><Text style={{fontSize: 24, textAlign: 'center'}}>U-Live</Text></View>
+</View>
+<View style={{ paddingRight: 24, borderColor: 'red' }}>
+</View> */}
+    </ScrollView>
 }
 
 export default Post

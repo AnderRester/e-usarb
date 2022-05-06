@@ -11,24 +11,28 @@ import SearchRecomendations from './src/components/SearchRecomendations';
 import SearchView from './src/assembly/SearchView';
 import Svg, { Circle, Rect } from 'react-native-svg';
 import { NavigationContainer } from '@react-navigation/native';
+import NavTabs from './src/assembly/NavTabs'
 
 //Main colors: white,  #928a56, #56926d
 
 export default function App() {
   return (
-    <View style={{ flex: 1 }}>
-      <View>
-        <Header />
-      </View>
-      {/*  paddingBottom: 70 */}
-      <View style={{ flex: 1, paddingBottom: 70 }}>
-        <Home />
-        {/* <SearchView /> */}
-      </View>
-      <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
-        <Navigation />
-      </View>
-    </View>
+    <NavigationContainer>
+      <NavTabs />
+    </NavigationContainer>
+    // <View style={{ flex: 1 }}>
+    //   <View>
+    //     <Header />
+    //   </View>
+    //   {/*  paddingBottom: 70 */}
+    //   <View style={{ flex: 1, paddingBottom: 70 }}>
+    //     <Home />
+    //     {/* <SearchView /> */}
+    //   </View>
+    //   <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
+    //     <Navigation />
+    //   </View>
+    // </View>
   );
 }
 
