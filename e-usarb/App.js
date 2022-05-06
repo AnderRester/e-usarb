@@ -10,6 +10,7 @@ import SearchResults from './src/components/SearchResults';
 import SearchRecomendations from './src/components/SearchRecomendations';
 import SearchView from './src/assembly/SearchView';
 import Svg, { Circle, Rect } from 'react-native-svg';
+import { NavigationContainer } from '@react-navigation/native';
 
 //Main colors: white,  #928a56, #56926d
 
