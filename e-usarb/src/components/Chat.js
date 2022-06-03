@@ -1,16 +1,18 @@
 import * as React from 'react';
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "../assembly/HomeStack";
 import Svg, { Path } from "react-native-svg";
 import Search from "../components/Search";
 import chatPersons from "../../chatPersons.json";
+import ChatMessages from './ChatMessages';
 
 
-function Chat() {
+// const Stack = createStackNavigator();
+
+
+function Chat({ navigation }) {
     return (
-        <View style={{backgroundColor: '#8BC9A2' }}>
+        <View style={{ backgroundColor: '#8BC9A2' }}>
             {/* <View style={{ flexDirection: 'row', alignItems: 'center', paddingVertical: 10, paddingHorizontal: 12, justifyContent: 'space-between' }}>
                 <TouchableOpacity>
                     <Svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
@@ -26,25 +28,36 @@ function Chat() {
                 </TouchableOpacity>
             </View> */}
             <Search />
-            <ScrollView style={{ paddingHorizontal: 12 }}>
-                {chatPersons.map((item) =>
-                    <TouchableOpacity>
-                        <View style={{ flex: 1, alignItems: 'center', flexDirection: 'row', paddingVertical: 5 }}>
-                            <Image source={{ uri: item.photo }} style={{
-                                height: 55,
-                                width: 55,
-                                borderRadius: 30
-                            }} />
-                            <View>
-                                <Text style={{ paddingLeft: 20, fontSize: 18, fontWeight: "600" }}>{item.name}</Text>
-                                <Text style={{ paddingLeft: 20, fontSize: 14, fontWeight: "400" }}>{item.status}</Text>
+
+
+            {
+                <ScrollView style={{ paddingHorizontal: 12 }}>
+                    {chatPersons.map((item) =>
+                        <TouchableOpacity onPress={() => navigation.navigate('ChatMessages')}>
+                            <View style={{ flex: 1, alignItems: 'center', flexDirection: 'row', paddingVertical: 5 }}>
+                                <Image source={{ uri: item.photo }} style={{
+                                    height: 55,
+                                    width: 55,
+                                    borderRadius: 30
+                                }} />
+                                <View>
+                                    <Text style={{ paddingLeft: 20, fontSize: 18, fontWeight: "600" }}>{item.name}</Text>
+                                    <Text style={{ paddingLeft: 20, fontSize: 14, fontWeight: "400" }}>{item.status}</Text>
+                                </View>
                             </View>
-                        </View>
-                    </TouchableOpacity>
-                )}
-            </ScrollView >
+                        </TouchableOpacity>
+                    )}
+                </ScrollView >
+            }
         </View >
     )
 }
+
+// const ChatStack = () => {
+//     <Stack.Navigator>
+//         <Stack.Screen name='Chat' component={Chat} />
+//         <Stack.Screen name='ChatMessages' component={ChatMessages} />
+//     </Stack.Navigator>
+// }
 
 export default Chat

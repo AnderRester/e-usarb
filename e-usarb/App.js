@@ -13,7 +13,7 @@ import Svg, { Circle, Rect } from 'react-native-svg';
 import { NavigationContainer } from '@react-navigation/native';
 import NavTabs from './src/assembly/NavTabs'
 //import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import Chat from "./src/components/Chat";
+import { ChatItem } from "react-chat-elements";
 
 //Main colors: white,  #928a56, #56926d
 
@@ -23,22 +23,8 @@ export default function App() {
     <NavigationContainer>
       <NavTabs />
       {/* <Chat /> */}
+      
     </NavigationContainer>
-    
-    
-    // <View style={{ flex: 1 }}>
-    //   <View>
-    //     <Header />
-    //   </View>
-    //   {/*  paddingBottom: 70 */}
-    //   <View style={{ flex: 1, paddingBottom: 70 }}>
-    //     <Home />
-    //     {/* <SearchView /> */}
-    //   </View>
-    //   <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
-    //     <Navigation />
-    //   </View>
-    // </View>
   );
 }
 
